@@ -306,7 +306,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #002413;
+  color: #00572e;
   text-decoration: underline;
 }
 
@@ -1926,7 +1926,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #002413;
+  color: #00572e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3316,8 +3316,8 @@ button.close {
 }
 
 .nav a:hover .caret {
-  border-top-color: #002413;
-  border-bottom-color: #002413;
+  border-top-color: #00572e;
+  border-bottom-color: #00572e;
 }
 
 .nav-tabs .dropdown-menu {
