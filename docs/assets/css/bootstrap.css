@@ -306,7 +306,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #00bd65;
+  color: #002413;
   text-decoration: underline;
 }
 
@@ -1265,10 +1265,10 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: rgba(0, 112, 60, 0.8);
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 112, 60, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 112, 60, 0.6);
 }
 
 input,
@@ -1926,7 +1926,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #00bd65;
+  color: #002413;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3316,8 +3316,8 @@ button.close {
 }
 
 .nav a:hover .caret {
-  border-top-color: #00bd65;
-  border-bottom-color: #00bd65;
+  border-top-color: #002413;
+  border-bottom-color: #002413;
 }
 
 .nav-tabs .dropdown-menu {
