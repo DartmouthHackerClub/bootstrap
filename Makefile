@@ -103,9 +103,9 @@ bootstrap/fonts/*: fonts/*
 # MAKE FOR GH-PAGES 4 FAT & MDO ONLY (O_O  )
 #
 
-gh-pages: build
+gh-pages: build bootstrap
+	zip -r docs/assets/bootstrap.zip bootstrap
 	jekyll build
-	cp -r _gh_pages/* ../bootstrap-gh-pages
 
 #
 # WATCH LESS FILES
