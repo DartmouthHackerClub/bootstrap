@@ -11,14 +11,16 @@ pre {
   font-size: (@font-size-base - 2);
   color: @gray-dark;
   border-radius: 0px;
+  background-color: #f8f8f8;
+  .box-shadow(rgba(0,0,0,0.06) 0 0 10px);
+  border: 1px solid #ccc; // IE8 fallback
+  border: 1px solid rgba(0,0,0,.15);
 }
 
 // Inline code
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
   white-space: nowrap;
 }
 
@@ -33,11 +35,6 @@ pre {
   word-wrap: break-word;
   white-space: pre;
   white-space: pre-wrap;
-  background-color: #fbfbfb;
-  border: 1px solid #ccc; // IE8 fallback
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 0px;
-  .box-shadow(rgba(0,0,0,0.06) 0 0 10px);
 
   // Make prettyprint styles more spaced out for readability
   &.prettyprint {
@@ -51,6 +48,7 @@ pre {
     white-space: pre;
     white-space: pre-wrap;
     background-color: transparent;
+	.box-shadow(none);
     border: 0;
   }
 }
