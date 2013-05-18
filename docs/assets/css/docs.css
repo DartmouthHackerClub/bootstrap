@@ -19,13 +19,13 @@ body {
 -------------------------------------------------- */
 
 .bs-docs-nav {
-  background-color: #b94a48;
+  background-color: #00703c;
 }
 .bs-docs-nav .navbar-brand {
   color: #fff;
 }
 .bs-docs-nav .navbar-nav > li > a {
-  color: #e6cac8;
+  color: #cae6c8;
 }
 .bs-docs-nav .navbar-nav > li > a:hover {
   color: #fff;
@@ -33,14 +33,14 @@ body {
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
   color: #fff;
-  background-color: #993c3a;
+  background-color: #00572e;
 }
 .bs-docs-nav .navbar-toggle {
-  border-color: #b94a48;
+  border-color: #00703c;
 }
 .bs-docs-nav .navbar-toggle:hover {
-  background-color: #993c3a;
-  border-color: #993c3a;
+  background-color: #00572e;
+  border-color: #00572e;
 }
 
 
@@ -68,15 +68,15 @@ body {
   margin-bottom: 5px;
   padding: 18px 24px;
   font-size: 21px;
-  color: #b94a48; /* redeclare to override the `.jumbotron a` */
+  color: #00703c; /* redeclare to override the `.jumbotron a` */
   background-color: #fff;
   border-color: #e5e5e5;
 }
 .bs-masthead .btn:hover,
 .bs-masthead .btn:active {
   color: #fff; /* redeclare to override the `.jumbotron a` */
-  background-color: #b94a48;
-  border-color: #b94a48;
+  background-color: #00703c;
+  border-color: #00703c;
 }
 
 /* Textual links */
@@ -106,7 +106,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 .bs-header h1 {
-  color: #b94a48;
+  color: #00703c;
 }
 .bs-header p {
   font-weight: 300;
@@ -154,9 +154,9 @@ body {
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
   font-weight: 500;
-  color: #b94a48;
+  color: #00703c;
   background-color: transparent;
-  border-right: 1px solid #b94a48;
+  border-right: 1px solid #00703c;
 }
 
 /* Nav: second level (shown on .active) */
