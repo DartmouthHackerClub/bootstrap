@@ -78,7 +78,7 @@ bootstrap/js/*.js: js/*.js
 	rm bootstrap/js/copyright.js bootstrap/js/bootstrap.min.tmp.js
 
 #
-# CSS COMPLILE
+# CSS COMPILE
 #
 
 bootstrap-css: bootstrap/css/*.css
@@ -98,10 +98,6 @@ bootstrap/fonts/*: fonts/*
 	mkdir -p bootstrap/fonts
 	cp fonts/* bootstrap/fonts/
 
-
-#
-# MAKE FOR GH-PAGES 4 FAT & MDO ONLY (O_O  )
-#
 
 gh-pages: build bootstrap
 	zip -r docs/assets/bootstrap.zip bootstrap
