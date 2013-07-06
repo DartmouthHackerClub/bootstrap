@@ -81,7 +81,9 @@ body {
 
 /* Textual links */
 .bs-masthead-links {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
   list-style: none;
 }
 .bs-masthead-links li {
@@ -91,7 +93,6 @@ body {
 .bs-masthead-links li + li {
   margin-left: 20px;
 }
-
 
 
 /* Customize and Download button
@@ -246,14 +247,14 @@ body {
 .show-grid {
   margin-bottom: 15px;
 }
-.show-grid .col {
+.show-grid [class^="col-"] {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #eee;
   border: 1px solid #ddd;
-}
-.show-grid .col:hover {
-  background-color: #ddd;
+  /* Todo: reconcile these */
+  background-color: rgba(185,74,72,.15);
+  border: 1px solid rgba(185,74,72,.2);
 }
 
 
@@ -311,7 +312,7 @@ body {
 .bs-example > .well:last-child {
   margin-bottom: 0;
 }
-.bs-example > .close {
+.bs-example > p > .close {
   float: none;
 }
 
@@ -347,6 +348,12 @@ body {
 }
 .bs-example-control-sizing input[type="text"] + input[type="text"] {
   margin-top: 10px;
+}
+.bs-example-form {
+  overflow: hidden;
+}
+.bs-example-form .input-group {
+  margin-bottom: 10px;
 }
 
 /* List groups */
@@ -472,43 +479,6 @@ body {
 
 
 
-/* Icons
--------------------------------------------------- */
-
-.the-icons {
-  padding-bottom: 1px;
-  margin-left: 0;
-  list-style: none;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.the-icons li {
-  float: left;
-  width: 100px;
-  height: 110px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 -1px -1px 0;
-}
-.the-icons .glyphicon {
-  display: block;
-  margin: 5px auto;
-  vertical-align: middle;
-  margin-right: 3px;
-  font-size: 24px;
-}
-.the-icons li:hover {
-  background-color: rgba(255,0,0,.1);
-}
-
-
-
 /* Responsive docs
 -------------------------------------------------- */
 
@@ -520,6 +490,7 @@ body {
 
 /* Utility classes table
 ------------------------- */
+.bs-table th small,
 .responsive-utilities th small {
   display: block;
   font-weight: normal;
@@ -594,6 +565,7 @@ body {
 }
 .footer-links {
   margin: 10px 0;
+  padding-left: 0;
 }
 .footer-links li {
   display: inline;
@@ -609,7 +581,8 @@ body {
 }
 .bs-social-buttons {
   display: inline-block;
-  margin: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 .bs-social-buttons li {
@@ -685,13 +658,6 @@ input.focused {
 /* Tablets and up */
 @media screen and (min-width: 768px) {
 
-  /* Reaffix the fixed sidebar */
-  .bs-sidebar.affix {
-    position: fixed; /* Undo the static from mobile-first approach */
-    top: 50px;
-    width: 160px;
-  }
-
   /* Back to top link */
   .bs-top {
     display: block; /* Unhide */
@@ -753,6 +719,8 @@ input.focused {
 
   /* Widen the fixed sidebar */
   .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile-first approach */
+    top: 50px;
     width: 213px;
   }
 
